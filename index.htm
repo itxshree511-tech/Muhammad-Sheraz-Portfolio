@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sheraz Khan - Full Stack Developer</title>
+    <meta name="description"
+      content="Muhammad Sheraz Khan is a Full Stack Developer specializing in Django, Node.js, JavaScript and modern web development.">
+    <meta name="author" content="Muhammad Sheraz Khan">
+    <link rel="canonical" href="https://your-domain.example/">
+    <meta property="og:title"
+      content="Muhammad Sheraz Khan - Full Stack Developer">
+    <meta property="og:description"
+      content="Full Stack Developer specializing in Django, Node.js, JavaScript and modern web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.example/">
+    <meta property="og:image" content="assets/images/project-quick-ai.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#070b14">
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sheraz-showcase.css">
+  </head>
+  <body class="loading">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="intro-loader" id="intro-loader" aria-live="polite"
+      aria-label="Portfolio loading">
+      <div class="light-stage" aria-hidden="true">
+        <span class="light-beam beam-one"></span>
+        <span class="light-beam beam-two"></span>
+        <span class="light-core"></span>
+      </div>
+      <div class="loader-panel">
+        <p class="loader-brand">MSK Portfolio</p>
+        <div class="loader-track"><span id="loader-progress"></span></div>
+        <div class="loader-row">
+          <span>Loading</span>
+          <strong id="loader-count">0%</strong>
+        </div>
+        <h1 id="loader-welcome">Welcome to my portfolio</h1>
+      </div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <div class="site-bg" aria-hidden="true">
+      <div class="grid-layer"></div>
+      <div class="star-field" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <header class="site-header" id="site-header">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a href="#home" class="brand" aria-label="Muhammad Sheraz Khan home"
+          aria-hidden="true"></a>
+        <button class="nav-toggle" type="button" aria-expanded="false"
+          aria-controls="mobile-menu" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Portfolio</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Portfolio</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-pad" id="home" aria-labelledby="hero-title">
+        <div class="section-container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow reveal-text">Hi, I'm</p>
+            <h1 id="hero-title"
+              class="hero-title reveal-text"><span>Muhammad</span> Sheraz
+              Khan</h1>
+            <p class="role reveal-text">Full Stack Developer</p>
+            <p class="hero-description reveal-text">I build modern, responsive
+              and scalable web applications using Django, Node.js and modern
+              frontend technologies.</p>
+            <div class="hero-actions reveal-item">
+              <a class="btn btn-primary magnetic" href="#projects">View My
+                Work</a>
+              <a class="btn btn-secondary magnetic"
+                href="assets/cv/Muhammad-Sheraz-Khan-CV.pdf" download>Download
+                CV</a>
+            </div>
+            <div class="social-row reveal-item" aria-label="Social links">
+              <a href="https://github.com/itxshree511-tech" target="_blank"
+                rel="noopener" aria-label="GitHub" data-social-link="github"><i
+                  data-lucide="github"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                aria-label="LinkedIn" data-social-link="linkedin"><i
+                  data-lucide="linkedin"></i></a>
+              <a href="https://wa.me/923216763141" target="_blank"
+                rel="noopener" aria-label="WhatsApp"
+                data-social-link="whatsapp"><i
+                  data-lucide="message-circle"></i></a>
+              <a href="mailto:itxshree511@gmail.com" aria-label="Email"
+                data-social-link="email"><i data-lucide="mail"></i></a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal-visual"
+            aria-label="Animated developer workspace visual">
+            <div class="visual-orbit orbit-a"></div>
+            <div class="visual-orbit orbit-b"></div>
+            <div class="code-window">
+              <div class="window-top">
+                <span></span><span></span><span></span>
+                <p>msk.dev</p>
+              </div>
+              <pre><code><span class="muted">class</span> Developer:
+  stack = ["Django", "Node.js"]
+  focus = "scalable web apps"
+
+  <span class="muted">def</span> build(self):
+      return clean_api + polished_ui</code></pre>
+            </div>
+            <div class="terminal-card">
+              <p><span>$</span> deploy portfolio</p>
+              <small>Static ready &middot; fast &middot; responsive</small>
+            </div>
+            <div class="tech-pill pill-django">Django</div>
+            <div class="tech-pill pill-node">Node.js</div>
+            <div class="tech-pill pill-api">REST APIs</div>
+          </div>
+        </div>
+        <a class="scroll-indicator" href="#about"
+          aria-label="Scroll to about"><span></span></a>
+      </section>
+
+      <section class="section-pad music-section" id="music"
+        aria-labelledby="music-title">
+        <div class="section-container">
+          <div class="section-heading">
+            <p class="section-kicker">Playlist</p>
+            <h2 id="music-title" class="section-title">Focus Music</h2>
+          </div>
+          <div class="music-player reveal-card" id="music-player">
+            <div class="music-current">
+              <img id="music-cover" src alt loading="lazy">
+              <div>
+                <p class="music-label">Now selected</p>
+                <h3 id="music-track-title"></h3>
+                <p id="music-track-artist"></p>
+              </div>
+            </div>
+            <div class="music-controls" aria-label="Music controls">
+              <button type="button" id="music-prev"
+                aria-label="Previous song"><i
+                  data-lucide="skip-back"></i></button>
+              <button type="button" id="music-toggle" class="music-toggle"
+                aria-label="Play selected song"><i
+                  data-lucide="play"></i></button>
+              <button type="button" id="music-next" aria-label="Next song"><i
+                  data-lucide="skip-forward"></i></button>
+            </div>
+            <div class="music-progress-wrap">
+              <span id="music-current-time">0:00</span>
+              <input id="music-progress" type="range" min="0" max="100"
+                value="0" aria-label="Song progress">
+              <span id="music-duration">0:00</span>
+            </div>
+            <div class="music-volume">
+              <i data-lucide="volume-2" aria-hidden="true"></i>
+              <input id="music-volume" type="range" min="0" max="1" step="0.01"
+                value="0.75" aria-label="Volume">
+            </div>
+            <p class="music-status" id="music-status" role="status"></p>
+            <div class="playlist" id="playlist" aria-label="Playlist"></div>
+            <audio id="portfolio-audio" preload="metadata"></audio>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spider-Man showcase: compact, three-column layout above About -->
+      <section class="sheraz-showcase" id="sheraz-showcase"
+        aria-label="Meet Sheraz Khan">
+        <div class="sheraz-showcase__inner">
+          <div class="sheraz-showcase__identity">
+            <h2 class="sheraz-showcase__name"><span
+                class="sheraz-showcase__hello">Hi,
+                I'm</span><br>Sheraz<br>Khan</h2>
+            <p class="sheraz-showcase__role">Full Stack Web Developer</p>
+            <a class="sheraz-showcase__button" href="#projects"><i
+                data-lucide="file-code-2" aria-hidden="true"></i> View
+              Projects</a>
+          </div>
+
+          <div class="sheraz-showcase__stage" id="sheraz-showcase-stage"
+            aria-label="Spider-Man and portrait transition">
+            <img class="sheraz-showcase__photo sheraz-showcase__human"
+              src="assets/images/b9316d53-ed5a-44d9-af82-f5f05b00c457.png"
+              alt="Placeholder portrait; replace with your own photo"
+              loading="eager">
+            <img class="sheraz-showcase__photo sheraz-showcase__spider"
+              src="assets/images/python.jfif" alt="Spider-Man placeholder image"
+              loading="eager">
+          </div>
+
+          <div class="sheraz-showcase__intro">
+            <p class="sheraz-showcase__description">As a Full Stack Developer, I
+              build modern, responsive web applications with clean interfaces,
+              reliable backends, and smooth user experiences. I turn ideas into
+              practical digital products with thoughtful design and maintainable
+              code.</p>
+            <a class="sheraz-showcase__button sheraz-showcase__button--outline"
+              href="#projects"><i data-lucide="code-2" aria-hidden="true"></i>
+              View Projects</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-container about-grid">
+          <div>
+            <p class="section-kicker">About Me</p>
+            <h2 id="about-title" class="section-title">Building clean systems
+              with polished interfaces.</h2>
+            <div class="about-copy">
+              <p>Muhammad Sheraz Khan is a Full Stack Developer focused on
+                practical, maintainable web applications. His work blends Django
+                and Django REST Framework backends, Node.js APIs,
+                database-driven features, and responsive frontend
+                experiences.</p>
+              <p>He values clear architecture, readable code, reliable REST
+                APIs, and user interfaces that feel smooth across desktop and
+                mobile screens.</p>
+            </div>
+          </div>
+          <div class="info-grid">
+            <article class="info-card"><i
+                data-lucide="server"></i><h3>Backend</h3><p>Django &middot; DRF
+                &middot; Node.js</p></article>
+            <article class="info-card"><i
+                data-lucide="monitor-smartphone"></i><h3>Frontend</h3><p>HTML
+                &middot; CSS &middot; JavaScript &middot; Tailwind</p></article>
+            <article class="info-card"><i
+                data-lucide="database"></i><h3>Database</h3><p>PostgreSQL
+                &middot; MySQL</p></article>
+            <article class="info-card"><i
+                data-lucide="git-branch"></i><h3>Development</h3><p>REST APIs
+                &middot; Git &middot; GitHub</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="skills" aria-labelledby="skills-title">
+        <div class="section-container">
+          <div class="section-heading">
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-title" class="section-title">Technologies I Work
+              With</h2>
+          </div>
+          <div class="skills-grid" id="skills-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="projects"
+        aria-labelledby="projects-title">
+        <div class="section-container">
+          <div class="section-heading with-actions">
+            <div>
+              <p class="section-kicker">Selected Work</p>
+              <h2 id="projects-title" class="section-title">Featured
+                Projects</h2>
+            </div>
+            <div class="filter-row" aria-label="Project filters">
+              <button class="filter-btn active" type="button"
+                data-filter="all">All</button>
+              <button class="filter-btn" type="button"
+                data-filter="fullstack">Full Stack</button>
+              <button class="filter-btn" type="button"
+                data-filter="frontend">Frontend</button>
+              <button class="filter-btn" type="button"
+                data-filter="django">Django</button>
+              <button class="filter-btn" type="button"
+                data-filter="javascript">JavaScript</button>
+            </div>
+          </div>
+          <div class="projects-grid" id="projects-grid"
+            aria-live="polite"></div>
+
+          <div class="project-gallery-block" aria-labelledby="gallery-title">
+            <div class="gallery-heading">
+              <p class="section-kicker">Beyond the screen</p>
+              <h3 id="gallery-title">A closer look at the work</h3>
+            </div>
+            <div class="gallery-carousel" id="project-gallery"
+              aria-label="Project image carousel"
+              aria-roledescription="carousel"></div>
+            <div class="gallery-controls" aria-label="Gallery navigation">
+              <button class="gallery-btn" id="gallery-prev" type="button"
+                aria-label="Previous image"><i
+                  data-lucide="chevron-left"></i></button>
+              <button class="gallery-btn" id="gallery-next" type="button"
+                aria-label="Next image"><i
+                  data-lucide="chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="services"
+        aria-labelledby="services-title">
+        <div class="section-container">
+          <div class="section-heading">
+            <p class="section-kicker">Services</p>
+            <h2 id="services-title" class="section-title">What I Can Build</h2>
+          </div>
+          <div class="services-grid" id="services-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="experience"
+        aria-labelledby="experience-title">
+        <div class="section-container journey-grid">
+          <div>
+            <p class="section-kicker">Journey</p>
+            <h2 id="experience-title" class="section-title">A practical path
+              into full stack development.</h2>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="process" aria-labelledby="process-title">
+        <div class="section-container">
+          <div class="section-heading">
+            <p class="section-kicker">Process</p>
+            <h2 id="process-title" class="section-title">How I Build</h2>
+          </div>
+          <div class="process-grid">
+            <article
+              class="process-card"><span>01</span><h3>Understand</h3><p>Understand
+                the client's requirements.</p></article>
+            <article class="process-card"><span>02</span><h3>Plan</h3><p>Plan
+                the structure, UI and technical approach.</p></article>
+            <article
+              class="process-card"><span>03</span><h3>Build</h3><p>Develop the
+                frontend, backend and required functionality.</p></article>
+            <article class="process-card"><span>04</span><h3>Test</h3><p>Test
+                responsiveness, usability and functionality.</p></article>
+            <article
+              class="process-card"><span>05</span><h3>Launch</h3><p>Deploy and
+                optimize the final product.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad contact-section" id="contact"
+        aria-labelledby="contact-title">
+        <div class="section-container contact-grid">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title" class="section-title">Let's Build Something
+              Great Together</h2>
+            <p class="contact-lead">Have a project, idea or business website in
+              mind? Let's turn it into a modern digital experience.</p>
+            <div class="contact-links">
+              <a href="mailto:itxshree511@gmail.com"><i
+                  data-lucide="mail"></i>Email</a>
+              <a href="https://github.com/itxshree511-tech" target="_blank"
+                rel="noopener" data-social-link="github"><i
+                  data-lucide="github"></i>GitHub</a>
+              <a href="https://wa.me/923216763141" target="_blank"
+                rel="noopener" data-social-link="whatsapp"><i
+                  data-lucide="message-circle"></i>WhatsApp</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+                data-social-link="linkedin"><i
+                  data-lucide="linkedin"></i>LinkedIn</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" action="#" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name"
+              required placeholder="Your name">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email"
+              required placeholder="you@example.com">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Tell me about your project"></textarea>
+            <button class="btn btn-primary magnetic" type="submit">Send
+              Message</button>
+            <p class="form-note" id="form-note" role="status">Static form:
+              connect Formspree, Netlify Forms, or your backend when ready.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#home">MSK</a>
+          <p>Muhammad Sheraz Khan</p>
+          <span>Full Stack Developer</span>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://github.com/itxshree511-tech" target="_blank"
+            rel="noopener" aria-label="GitHub" data-social-link="github"><i
+              data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"
+            aria-label="LinkedIn" data-social-link="linkedin"><i
+              data-lucide="linkedin"></i></a>
+          <a href="https://wa.me/923216763141" target="_blank" rel="noopener"
+            aria-label="WhatsApp" data-social-link="whatsapp"><i
+              data-lucide="message-circle"></i></a>
+          <a href="mailto:itxshree511@gmail.com" aria-label="Email"
+            data-social-link="email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="section-container footer-bottom">
+        <p>&copy; <span id="year"></span> Muhammad Sheraz Khan. All rights
+          reserved.</p>
+        <button class="back-to-top" type="button" aria-label="Back to top"><i
+            data-lucide="arrow-up"></i></button>
+      </div>
+    </footer>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true"
+      role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" tabindex="-1">
+        <button class="modal-close" type="button"
+          aria-label="Close project details" data-close-modal><i
+            data-lucide="x"></i></button>
+        <img id="modal-image" src alt loading="lazy">
+        <div class="modal-content">
+          <p class="section-kicker">Project Detail</p>
+          <h2 id="modal-title"></h2>
+          <p id="modal-description"></p>
+          <div class="modal-features" id="modal-features"></div>
+          <div class="tech-list" id="modal-tech"></div>
+          <div class="modal-actions">
+            <a class="btn btn-secondary" id="modal-live" href="#"
+              target="_blank" rel="noopener" aria-label="Open live demo">Live
+              Demo</a>
+            <a class="btn btn-secondary" id="modal-github" href="#"
+              target="_blank" rel="noopener"
+              aria-label="Open GitHub repository">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
